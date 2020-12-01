@@ -1,0 +1,16 @@
+git config --global user.name
+git config --global user.email
+git config --list
+git config user.name
+git init
+git status
+git add --a/git add .
+git add "File Name"
+git commit -m "Commit name"
+pws(Present Working Directory)
+ls(List)
+cd(Change Directory) eg:-cd c/dinesh
+touch(to crate file) eg:- touch abc.txt
+(.gitignore,*.fileExtension,foldername/[all folders],/foldername/[for outer folder only])
+git diff(Compares Staging area with current working directory)
+git diff --staged(Current staged with previous commit)

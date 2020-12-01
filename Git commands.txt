@@ -34,6 +34,14 @@ esc for to remove command
 ---------------------------------------------------------------
 git restore --staged filename (to remove file from staging area)
 **** git checkout -- filename **** very imp (to go back to previous commit)eg suppose we delete a file and want to restore
+git checkout -f (to change all files to previous commit)
 
+----------------------------------------------------------------------------------------------------
+working with remote repo
 
-
+1.)create repo
+2.)add new remote        git add origin url
+3.)check remote 	 git remote
+4.)get remote details    git remote -v
+5.)setup ssh key for your device
+6.)push origin master

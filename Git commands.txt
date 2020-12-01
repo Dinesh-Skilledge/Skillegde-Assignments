@@ -45,3 +45,12 @@ working with remote repo
 4.)get remote details    git remote -v
 5.)setup ssh key for your device
 6.)push origin master
+
+-----------------------------------------------------------------------
+Creating alias in git bash
+
+git config --global alias.(your alias name) (command name)
+
+eg 1.git config --global alias.st status
+
+eg 2.git config --global alias.ct commit

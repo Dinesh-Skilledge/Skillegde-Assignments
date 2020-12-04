@@ -1,0 +1,73 @@
+git config --global user.name
+git config --global user.email
+git config --list
+git config user.name
+git init
+git status
+git add --a/git add .
+git add "File Name"
+git commit -m "Commit name"
+git commit -a -m "Commit name"  (For direct commit )
+pws(Present Working Directory)
+ls(List)
+rm -rf .git 
+cd(Change Directory) eg:-cd c/dinesh
+touch(to crate file) eg:- touch abc.txt
+(.gitignore,*.fileExtension,foldername/[all folders],/foldername/[for outer folder only])
+git diff(Compares Staging area with current working directory)
+git diff --staged(Current staged with previous commit)
+git rm file name (To delete the file and stage )
+git mv filename1 filename2 (To rename file)
+git rm --cached filename.ectension (To remove file from tracking).
+git clone link filename
+--------------------FILTERS IN GIT LOG-----------------------
+git log -p (Changes done in commit)
+git log -p -number(shows number of commit as mentioned)
+git log --stat (shows basics of each commit)
+git log --pretty=short/oneline
+git log --since=2.days/.weeks/.months
+git log --pretty=format:"choose style" {check this website[git-scm.com/docs/git-log]}
+--------------------------------------------------------------
+git commit --amend (to add our commit to previous commit)
+i for insert 
+esc for to remove command
+:wq to get out of editor
+---------------------------------------------------------------
+git restore --staged filename (to remove file from staging area)
+**** git checkout -- filename **** very imp (to go back to previous commit)eg suppose we delete a file and want to restore
+git checkout -f (to change all files to previous commit)
+
+----------------------------------------------------------------------------------------------------
+working with remote repo
+
+1.)create repo
+2.)add new remote        git add origin url		       |--------------------->1.)
+3.)check remote 	 git remote			       |
+4.)get remote details    git remote -v                         |
+5.)setup ssh key for your device-------------------------------
+6.)push origin master
+
+-----------------------------------------------------------------------
+Creating alias in git bash
+
+git config --global alias.(your alias name) (command name)
+eg 1.git config --global alias.st status
+eg 2.git config --global alias.ct commit
+eg 3.git config --global alias.unstage 'restore --staged --'
+eg 4.git config --global alias.last 'log -p -1'
+-----------------------------------------------  ------------------------
+
+WORKING WITH BRANCHES IN GIT
+git checkout -b branchname (To create new branch)
+git checkout master
+git checkout branchname
+git branch
+git merge branchname
+git branch -v (shows current bracnh ,last commit hash,last commit message)
+git branch --merged (shows already merged branches)
+git branch --no-merged (shows branches that are not merged)
+git branch -d branch name (to delete the branch)------------>gives error if branch is not merged.
+<<<<<called as conflict resolution markers   
+git push origin branchname:branchname on server (to upload brach on server)
+git push -d branchname (to delete branch on server)
+------------------------------------------------------------------------------
